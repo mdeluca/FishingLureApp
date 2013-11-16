@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#home, #rapala {
+	background: url('../themes/images/subtle_stripes.png');
+}
+
+#rapalaLure h4
+{
+	margin-left: 22px;
+	margin-top: 0;
+}
+
+#bass
+{
+	display: block;
+	margin: 0 auto;
+}

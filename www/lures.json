@@ -1,0 +1,22 @@
+[
+	{
+		"image" : "images/rapala.png",
+		"page" : "#rapala",
+		"brand" : "Rapala",
+		"lureName" : "Rapala X-Rap"
+	},
+	
+	{
+		"image" : "images/cotton.png",
+		"page" : "#cotton",
+		"brand" : "Cotton-Cordel",
+		"lureName" : "Cotton-Cordel Big O"
+	},
+	
+	{
+		"image" : "images/storm.png",
+		"page" : "#storm",
+		"brand" : "Storm",
+		"lureName" : "Storm Chug Bug"
+	}
+]

@@ -1,0 +1,132 @@
+<!--jQuery Mobile site must start with an HTML5 "doctype" to take full advantage of all of the framework's features. -->
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fishing Lures</title>
+<!--If this isn't set, many mobile browsers will use a "virtual" page width around 900 pixels to make it work well with existing desktop sites but the screens may look zoomed out and too wide.-->
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<!--references to jQuery, jQuery Mobile and the mobile theme CSS are all required to start things off. -->
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+<!--<link rel="stylesheet" href="themes/rapala.min.css" />-->
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+
+<script src="phonegap.js"></script>
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script src="js/global.js"></script>
+<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+<script src="js/lures.js"></script>
+
+</head>
+
+<body onLoad="getLures();">
+<!-- Start of first page -->
+<!--each view or "page" on the mobile device is identified with an element (usually a div) with the data-role="page" attribute-->
+<div data-role="page" id="home" data-theme="c">
+	<div data-role="header" data-theme="c">
+		<h1>Fising Lures</h1>
+	</div>
+
+	<div data-role="content">	
+    <!--inset, insets the list i.e. add space, filter adds search-->
+		<ul id="lureList" data-role="listview" data-inset="true" data-filter="true">
+		</ul>
+        <img id="bass" src="themes/images/bass.jpg" alt="bass" />	
+	</div>
+    
+    <div data-role="footer" data-theme="a" data-position="fixed">
+		<nav data-role="navbar">
+        <ul>
+        	<li><a href="#home" data-icon="home">Home</a></li>
+			<li><a href="#info" data-icon="info" data-rel="dialog">Info</a></li>
+        </ul>
+        </nav>
+	</div>
+</div>
+
+<!--A single HTML document can contain multiple "pages" that are loaded together by stacking multiple divs with a data-role of "page".-->
+
+<!-- Start of second page -->
+<div data-role="page" id="rapala">
+    <div data-theme="c" data-role="header">
+      <h3>
+      Rapala Lures
+      </h3>
+		<a data-role="button" data-theme="b" href="#home" data-icon="home">Home</a>
+</div>
+<div data-role="content">
+	<h2 id="xrap">
+		Rapala - X-Rap
+	</h2>
+		<div id="rapalaLure" class="ui-grid-a">
+			<div class="ui-block-a">
+					<img id="xrap" style="width: 100%;" src="http://www.tackletour.com/images/picrapalaxrap1.jpg" />
+			</div>
+			<div class="ui-block-b">
+            <h4>Features</h4>
+            	<ul>
+					<li>Slashbait® Action</li>
+					<li>Suspending on Pause</li>
+					<li>Textured Translucent Body</li>
+				</ul>
+			</div>
+        </div>
+		<div class="ui-grid-solo">
+            	<div class="ui-block-a">
+                <p>
+                 The X-Rap® is "all about the action." The versatility of the X-Rap allows an angler to impart a number of fish-catching actions in a single retrieve. Casts like a bullet for long accurate casts.</p> 
+                 <p>Prominent scales and lateral line on the fuselage capture and flash light like a beacon. It can be fished both in an aggressive "Slashbait®" technique or with a classic Rapala® wobble.</p> 
+                 <p>The angler defines the cadence for maximum effectiveness. Loaded with features from tip to tail, textured translucent body, internal holographic foil, internal long cast system (XR04 excluded), 3D holographic eyes, flash foil teaser tails, Slashbait® action, Rapala "wobble" action, suspends on pause. All topped off with premium VMC® black nickel hooks, each hand-tuned and tank-tested to ensure top performing action from the start.
+                 </p>
+                 </div>
+		</div>
+</div>
+
+<div data-role="collapsible-set">
+
+	<div data-role="collapsible" data-theme="b">
+	<h3>Running Depth</h3>
+	<p>2' - 3'</p>
+	</div>
+	
+	<div data-role="collapsible" data-theme="b">
+	<h3>Body Length</h3>
+	<p>1-1/2"</p>
+	</div>
+	
+</div>
+
+<div data-role="footer" data-theme="a" data-position="fixed">
+		<nav data-role="navbar">
+        <ul>
+        	<li><a href="#home" data-icon="home">Home</a></li>
+			<li><a href="#info" data-icon="info" data-rel="dialog">Info</a></li>
+        </ul>
+        </nav>
+	</div>
+
+</div>
+
+<div data-role="page"id="info" data-theme="a">
+		<div data-role="header">
+			<h1>Fishing App</h1>
+		</div>
+			<div data-role="content">
+			<p>The Fishing App gives the edge you need to catch the big one.  You can easily access information about lures on the go.</p>
+			<a href="#"
+				data-role="button"
+				data-inline="true"
+				data-rel="back"
+				data-theme="a">cancel</a>
+			<a href="#home"
+				data-role="button"
+				data-inline="true"
+				data-theme="a">home</a>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
